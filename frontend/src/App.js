@@ -19,7 +19,7 @@ function App() {
   // ✅ Fetch tasks
   const fetchTasks = useCallback(async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/tasks", {
+      const res = await axios.get("https://task-manager-mern-sf59.onrender.com/api/tasks", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -38,7 +38,7 @@ function App() {
   const addTask = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/tasks",
+        "https://task-manager-mern-sf59.onrender.com/api/tasks",
         { title, description },
         {
           headers: {
@@ -57,7 +57,7 @@ function App() {
   // ✅ Delete task
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${id}`, {
+      await axios.delete(`https://task-manager-mern-sf59.onrender.com/api/tasks/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -75,7 +75,7 @@ function App() {
         task.status === "pending" ? "completed" : "pending";
 
       await axios.put(
-        `http://localhost:5000/api/tasks/${task._id}`,
+        `https://task-manager-mern-sf59.onrender.com/api/tasks/${task._id}`,
         { ...task, status: newStatus },
         {
           headers: {

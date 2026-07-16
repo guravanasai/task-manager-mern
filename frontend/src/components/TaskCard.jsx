@@ -11,7 +11,7 @@ function TaskCard({ task, deleteTask, toggleStatus, refresh }) {
   const updateTask = async () => {
     try {
       await axios.put(
-        `http://localhost:5000/api/tasks/${task._id}`,
+        `https://task-manager-mern-sf59.onrender.com/api/tasks/${task._id}`,
         { title, description },
         {
           headers: {
