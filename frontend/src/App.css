@@ -1,0 +1,113 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Welcome text */
+.welcome {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Button */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.logout {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background: #d9363e;
+}
+
+/* Form */
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.add-btn {
+  width: 100%;
+  background: #4caf50;
+  color: white;
+}
+
+.task-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,.1);
+}
+.task-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.completed {
+  color: green;
+  font-weight: bold;
+}
+
+/* Buttons inside card */
+.task-actions {
+  margin-top: 10px;
+}
+
+.task-actions button {
+  margin-right: 8px;
+}
+
+.delete {
+  background: red;
+  color: white;
+}
+
+.toggle {
+  background: #2196f3;
+  color: white;
+}
